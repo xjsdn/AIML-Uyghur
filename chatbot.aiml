@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0">
+
+<meta name="author" content="kompasim"/>
+
+<!-- includes -->
+<include file="test.aiml"/>
+<include file="one.aiml"/>
+<include file="two.aiml"/>
+
+<!-- START LINE -->
+<!-- oi line -->
+
+<category>
+    <pattern>hello</pattern>
+    <template>
+        hello ...
+    </template>
+</category>
+
+
+<default>
+    <srai>DEFAULT</srai>
+</default>
+
+<category>
+    <pattern>DEFAULT</pattern>
+    <template>
+        <random>
+        <li>default message ...</li>
+        </random>
+    </template>
+</category>
+
+
+</aiml>
