@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml version="1.0">
+
+<!-- yahximuzis -->
+<category>
+    <pattern>ياخشىمۇ#</pattern>
+    <template>
+        ياخشى ، ئۈزىڭىزچۇ ؟
+    </template>
+</category>
+<category>
+    <pattern>ياخشى#</pattern>
+    <that>ياخشى ، ئۈزىڭىزچۇ ؟</that>
+    <template>
+        سىزنى كۈرۈپ ناھايىتى خۇشال بولدۇم 
+    </template>
+</category>
+
+<!-- asslamualaykum -->
+<category>
+    <pattern>ئەسسالامۇ ئەلەيكۇم</pattern>
+    <template>
+        ۋەئەلەيكۇم ئەسسالام ، ياخشى تۇرىۋاتامسىز ؟
+    </template>
+</category>
+<category>
+    <pattern>ياخشى#</pattern>
+    <that>ۋەئەلەيكۇم ئەسسالام ، ياخشى تۇرىۋاتامسىز ؟</that>
+    <template>
+        كۈرۈشكىنىمدىن خۇشالمەن 
+    </template>
+</category>
+
+<!-- name -->
+<category>
+	<pattern>#ئىسمىڭ نېم#</pattern>
+	<pattern>#ئىسمىڭ نىم#</pattern>
+	<pattern>#ئىسمىڭىز نېم#</pattern>
+	<pattern>#ئىسمىڭىز نىم#</pattern>
+	<template>مىنىڭ ئىسمىم <bot name="name"></bot> ، سىزنىڭ ئىسمىڭىزچۇ ؟</template>
+</category>
+<category>
+	<pattern>#ئىسمىم#ئەمەس</pattern>
+	<template>چاقچاق قىلماڭە ، ئەمسە ئىسمىڭىز نېمە </template>
+</category>
+<category>
+	<pattern>* مىنىڭ ئىسمىم</pattern>
+	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="1" /> <set name="userName"><star index="1" /></set></template>
+</category>
+<category>
+	<pattern>#ئىسمىم *</pattern>
+	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="2" /> <set name="userName"><star index="2" /></set></template>
+</category>
+<category>
+	<pattern>#مىنىڭ# *</pattern>
+	<pattern>#مېنىڭ# *</pattern>
+	<that>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز *</that>
+	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star/> ...<set name="userName"><star/></set></template>
+</category>
+<category>
+	<pattern>#مەن كىم#</pattern>
+	<pattern>#مەن كېم#</pattern>
+	<template>سىزنىڭ ئىسمىڭىز <get name="userName"/> ، ئالدىنقى قېتىم ئىسىمدە تۇتىۋالغان ... </template>
+</category>
+
+
+
+
+
+</aiml>
