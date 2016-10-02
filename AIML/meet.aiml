@@ -18,7 +18,7 @@
 
 <!-- asslamualaykum -->
 <category>
-    <pattern>ئەسسالامۇ ئەلەيكۇم</pattern>
+    <pattern>ئەسسالامۇ#ئەلەيكۇم#</pattern>
     <template>
         ۋەئەلەيكۇم ئەسسالام ، ياخشى تۇرىۋاتامسىز ؟
     </template>
@@ -33,14 +33,14 @@
 
 <!-- name -->
 <category>
-	<pattern>#ئىسمىڭ نېم#</pattern>
-	<pattern>#ئىسمىڭ نىم#</pattern>
-	<pattern>#ئىسمىڭىز نېم#</pattern>
-	<pattern>#ئىسمىڭىز نىم#</pattern>
+	<pattern># ئىسمىڭ نېم#</pattern>
+	<pattern># ئىسمىڭ نىم#</pattern>
+	<pattern># ئىسمىڭىز نېم#</pattern>
+	<pattern> #ئىسمىڭىز نىم#</pattern>
 	<template>مىنىڭ ئىسمىم <bot name="name"></bot> ، سىزنىڭ ئىسمىڭىزچۇ ؟</template>
 </category>
 <category>
-	<pattern>#ئىسمىم#ئەمەس</pattern>
+	<pattern># ئىسمىم # ئەمەس</pattern>
 	<template>چاقچاق قىلماڭە ، ئەمسە ئىسمىڭىز نېمە </template>
 </category>
 <category>
@@ -48,23 +48,70 @@
 	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="1" /> <set name="userName"><star index="1" /></set></template>
 </category>
 <category>
-	<pattern>#ئىسمىم *</pattern>
+	<pattern># ئىسمىم *</pattern>
 	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="2" /> <set name="userName"><star index="2" /></set></template>
 </category>
 <category>
-	<pattern>#مىنىڭ# *</pattern>
-	<pattern>#مېنىڭ# *</pattern>
+	<pattern># مىنىڭ# *</pattern>
+	<pattern># مېنىڭ# *</pattern>
 	<that>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز *</that>
 	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star/> ...<set name="userName"><star/></set></template>
 </category>
 <category>
-	<pattern>#مەن كىم#</pattern>
-	<pattern>#مەن كېم#</pattern>
+	<pattern># مەن كىم #</pattern>
+	<pattern># مەن كېم #</pattern>
 	<template>سىزنىڭ ئىسمىڭىز <get name="userName"/> ، ئالدىنقى قېتىم ئىسىمدە تۇتىۋالغان ... </template>
+</category>
+
+<!-- age -->
+<category>
+	<pattern>#سەن # قانچە ياش#</pattern>
+	<pattern>#سىز # قانچە ياش#</pattern>
+	<pattern># قانچە ياش#</pattern>
+	<pattern># نەچچە ياش#</pattern>
+	<template>مەن بۇ يل <bot name="name"></bot> ياش ، سىزچۇ ؟</template>
+</category>
+<category>
+	<pattern>#مەن#ياش#</pattern>
+	<template>تېخى ياشكەنسىز جۇمۇ </template>
+</category>
+
+<!-- parent -->
+<category>
+	<pattern>#داداڭ#</pattern>
+	<pattern>#دادىڭىز#</pattern>
+	<pattern>#ئاپاڭ#</pattern>
+	<pattern>#ئاپىڭىز#</pattern>
+	<pattern>#ئاتاڭ#</pattern>
+	<pattern>#ئاتىڭىز#</pattern>
+	<pattern>#ئاناڭ#</pattern>
+	<pattern>#ئانىڭىز#</pattern>
+	<template>مىنىڭ ئاپام دادام يوق ، مىنى <bot name="owner"></bot> ياساپ چىققان </template>
+</category>
+<category>
+	<pattern>#دادام#</pattern>
+	<pattern>#ئاپام#</pattern>
+	<pattern>#ئاتام#</pattern>
+	<pattern>#ئانام#</pattern>
+	<template>سىزنىڭ ئائىلىڭىزنىڭ ئەھۋالىنى مەن ئانچە بىلىپ كەتمەيمەن </template>
+</category>
+
+<!-- ability -->
+<category>
+	<pattern>#نىم#قىلالاي#</pattern>
+	<template>مەن <bot name="name"></bot> بۇلىمەن، مەن سىزنىڭ دوستىڭىز ، زىرىككەندە سىزگە ھەمراھ بۇلۇپ پاراڭلىشىپ بىرەلەيمەن</template>
 </category>
 
 
 
 
 
+
+
+
+
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
 </aiml>
