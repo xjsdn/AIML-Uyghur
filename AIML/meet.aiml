@@ -30,6 +30,13 @@
         كۈرۈشكىنىمدىن خۇشالمەن 
     </template>
 </category>
+<category>
+    <pattern>مەنمۇ شۇ#</pattern>
+    <that>كۈرۈشكىنىمدىن خۇشالمەن</that>
+    <template>
+        خۇشال بولغان بولسىڭىزلا بولدى 
+    </template>
+</category>
 
 <!-- name -->
 <category>
@@ -40,27 +47,38 @@
 	<template>مىنىڭ ئىسمىم <bot name="name"></bot> ، سىزنىڭ ئىسمىڭىزچۇ ؟</template>
 </category>
 <category>
+	<pattern># مەن كىم #</pattern>
+	<pattern># مەن كېم #</pattern>
+	<pattern>#مېنىڭ ئىسمىم نېمە#</pattern>
+	<pattern>#مىنىڭ ئىسمىم نىمە#</pattern>
+	<pattern>#مىنىڭ ئىسمىم نېمە#</pattern>
+	<pattern>#مېنىڭ ئىسمىم نىمە#</pattern>
+	<pattern>#بىلەمس# مېنىڭ# ئىسمىمنى#</pattern>
+	<pattern>#مېنىڭ# ئىسمىمنى بىلەمس#</pattern>
+	<pattern>#تۇنامس# مېنى#</pattern>
+	<pattern>#تۇنۇمس# مېنى#</pattern>
+	<pattern>#مېنى تۇنامس#</pattern>
+	<pattern>#مېنى تۇنۇمس#</pattern>
+	<template>سىزنىڭ ئىسمىڭىز <get name="userName"/> ، ئالدىنقى قېتىم ئىسىمدە تۇتىۋالغان ... </template>
+</category>
+<category>
 	<pattern># ئىسمىم # ئەمەس</pattern>
 	<template>چاقچاق قىلماڭە ، ئەمسە ئىسمىڭىز نېمە </template>
 </category>
 <category>
-	<pattern>* مىنىڭ ئىسمىم</pattern>
-	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="1" /> <set name="userName"><star index="1" /></set></template>
-</category>
-<category>
-	<pattern># ئىسمىم *</pattern>
+	<pattern>مىنىڭ# ئىسمىم *</pattern>
+	<pattern>مېنىڭ# ئىسمىم *</pattern>
 	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="2" /> <set name="userName"><star index="2" /></set></template>
 </category>
 <category>
-	<pattern># مىنىڭ# *</pattern>
-	<pattern># مېنىڭ# *</pattern>
-	<that>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز *</that>
-	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star/> ...<set name="userName"><star/></set></template>
+	<pattern>ئىسمىم *</pattern>
+	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="1" /> <set name="userName"><star index="1" /></set></template>
 </category>
 <category>
-	<pattern># مەن كىم #</pattern>
-	<pattern># مەن كېم #</pattern>
-	<template>سىزنىڭ ئىسمىڭىز <get name="userName"/> ، ئالدىنقى قېتىم ئىسىمدە تۇتىۋالغان ... </template>
+	<pattern>مىنىڭ *</pattern>
+	<pattern>مېنىڭ *</pattern>
+	<that>مىنىڭ ئىسمىم * ، سىزنىڭ ئىسمىڭىزچۇ ؟</that>
+	<template>ئىسىمدە تۇتىۋالدىم ، ئىسمىڭىز <star index="1"/> <set name="userName"><star index="1"/></set></template>
 </category>
 
 <!-- age -->
@@ -102,7 +120,51 @@
 	<template>مەن <bot name="name"></bot> بۇلىمەن، مەن سىزنىڭ دوستىڭىز ، زىرىككەندە سىزگە ھەمراھ بۇلۇپ پاراڭلىشىپ بىرەلەيمەن</template>
 </category>
 
-
+<!-- sex -->
+<category>
+	<pattern>#مەن#ئوغۇل#مۇ#</pattern>
+	<pattern>#مەن#ئەر#مۇ#</pattern>
+	<pattern>#مەن#قىز#مۇ#</pattern>
+	<pattern>#مەن#ئايال#مۇ#</pattern>
+	<template>مەن بىلىمەن ، سىزنىڭ جىنسىڭىز <get name="userSex"/></template>
+</category>
+<category>
+	<pattern>#مېنىڭ جىنسىم نېمە#</pattern>
+	<template>مەن بىلىمەن ، سىزنىڭ جىنسىڭىز <get name="userSex"/></template>
+</category>
+<category>
+	<pattern>#مېنىڭ جىنسىم *</pattern>
+	<template>بىلىۋالدىم سىزنىڭ جىنسىڭىز <star index="2"/><set name="userSex"><star index="2"/></set></template>
+</category>
+<category>
+	<pattern>#س#قىز#</pattern>
+	<pattern>#س#ئوغۇل#</pattern>
+	<pattern>#س#ئەر#</pattern>
+	<pattern>#س#ئايال#</pattern>
+	<template>مەن سىزنىڭ ياردەمچىڭىز ، مىنىڭ جىنسىم يوق ، سىزچۇ ؟ ئەرمۇ ، ئايالمۇ ؟</template>
+</category>
+<category>
+	<pattern>#ئوغۇل#</pattern>
+	<pattern>#ئەر#</pattern>
+	<that>مەن سىزنىڭ ياردەمچىڭىز ، مىنىڭ جىنسىم يوق ، سىزچۇ ؟ ئەرمۇ ، ئايالمۇ ؟</that>
+	<template>بىلىۋالدىم ، سىزنىڭ جىنسىڭىز ئەر <set name="userSex">ئەر</set></template>
+</category>
+<category>
+	<pattern>#قىز#</pattern>
+	<pattern>#ئايال#</pattern>
+	<that>مەن سىزنىڭ ياردەمچىڭىز ، مىنىڭ جىنسىم يوق ، سىزچۇ ؟ ئەرمۇ ، ئايالمۇ ؟</that>
+	<template>بىلىۋالدىم سىزنىڭ جىنسىڭىز ئايال <set name="userSex">ئەر</set></template>
+</category>
+<category>
+	<pattern>#مەن#ئوغۇل#</pattern>
+	<pattern>#مەن#ئەر#</pattern>
+	<template>بىلىۋالدىم ، سىزنىڭ جىنسىڭىز ئەر <set name="userSex">ئەر</set></template>
+</category>
+<category>
+	<pattern>#مەن#قىز#</pattern>
+	<pattern>#مەن#ئايال#</pattern>
+	<template>بىلىۋالدىم سىزنىڭ جىنسىڭىز ئايال <set name="userSex">ئايال</set></template>
+</category>
 
 
 
