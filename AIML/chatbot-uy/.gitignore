@@ -1,7 +1,0 @@
-.settings
-.buildpath
-.project
-config.php
-vendor
-aiml/*.aimll
-!aiml/test.aiml
