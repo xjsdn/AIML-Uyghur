@@ -15,6 +15,35 @@
         سىزنى كۈرۈپ ناھايىتى خۇشال بولدۇم 
     </template>
 </category>
+<category>
+    <pattern>#مەنمۇ#</pattern>
+    <that>سىزنى كۈرۈپ ناھايىتى خۇشال بولدۇم</that>
+    <template>
+        خۇشال بولغان بولسىڭىزلا بولدى 
+    </template>
+</category>
+
+<!-- tixlikmu -->
+<category>
+    <pattern>#تىنچلىقمۇ#</pattern>
+    <template>
+        تىنىچلىق ، ئۈزىڭىزچۇ ؟
+    </template>
+</category>
+<category>
+    <pattern>#تىنىچلىق#</pattern>
+    <that>تىنىچلىق ، ئۈزىڭىزچۇ ؟</that>
+    <template>
+        سىزنى كۈرۈپ بەكمۇ خۇشال بولدۇم 
+    </template>
+</category>
+<category>
+    <pattern>#مەنمۇ#</pattern>
+    <that>سىزنى كۈرۈپ بەكمۇ خۇشال بولدۇم</that>
+    <template>
+        خۇشال بولغان بولسىڭىزلا بولدى 
+    </template>
+</category>
 
 <!-- asslamualaykum -->
 <category>
@@ -31,7 +60,7 @@
     </template>
 </category>
 <category>
-    <pattern>مەنمۇ شۇ#</pattern>
+    <pattern>#مەنمۇ#</pattern>
     <that>كۈرۈشكىنىمدىن خۇشالمەن</that>
     <template>
         خۇشال بولغان بولسىڭىزلا بولدى 
@@ -168,8 +197,17 @@
 
 
 
+<!-- bye -->
 
-
+<category>
+    <pattern>#خوش#</pattern>
+    <pattern>خەير خوش#</pattern>
+    <pattern>كەتتىم#</pattern>
+    <pattern>خوش ئەمسە#</pattern>
+    <template>
+        خەيىر - خوش ، قايتىپ كىلىشىڭىزنى قارشى ئالىمەن 
+    </template>
+</category>
 
 
 <category>
