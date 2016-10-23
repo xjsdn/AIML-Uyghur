@@ -3,13 +3,13 @@
 
 <!-- yahximuzis -->
 <category>
-    <pattern>ياخشىمۇ#</pattern>
+    <pattern>#ياخشىمۇ#</pattern>
     <template>
         ياخشى ، ئۈزىڭىزچۇ ؟
     </template>
 </category>
 <category>
-    <pattern>ياخشى#</pattern>
+    <pattern>#ياخشى#</pattern>
     <that>ياخشى ، ئۈزىڭىزچۇ ؟</that>
     <template>
         سىزنى كۈرۈپ ناھايىتى خۇشال بولدۇم 
@@ -31,7 +31,7 @@
     </template>
 </category>
 <category>
-    <pattern>#تىنىچلىق#</pattern>
+    <pattern>#تىنچلىق#</pattern>
     <that>تىنىچلىق ، ئۈزىڭىزچۇ ؟</that>
     <template>
         سىزنى كۈرۈپ بەكمۇ خۇشال بولدۇم 
@@ -47,13 +47,13 @@
 
 <!-- asslamualaykum -->
 <category>
-    <pattern>ئەسسالامۇ#ئەلەيكۇم#</pattern>
+    <pattern>#ئەسسالامۇ#ئەلەيكۇم#</pattern>
     <template>
         ۋەئەلەيكۇم ئەسسالام ، ياخشى تۇرىۋاتامسىز ؟
     </template>
 </category>
 <category>
-    <pattern>ياخشى#</pattern>
+    <pattern>#ياخشى#</pattern>
     <that>ۋەئەلەيكۇم ئەسسالام ، ياخشى تۇرىۋاتامسىز ؟</that>
     <template>
         كۈرۈشكىنىمدىن خۇشالمەن 
@@ -69,15 +69,15 @@
 
 <!-- name -->
 <category>
-	<pattern># ئىسمىڭ نېم#</pattern>
-	<pattern># ئىسمىڭ نىم#</pattern>
-	<pattern># ئىسمىڭىز نېم#</pattern>
-	<pattern> #ئىسمىڭىز نىم#</pattern>
+	<pattern>#ئىسمىڭ نېم#</pattern>
+	<pattern>#ئىسمىڭ نىم#</pattern>
+	<pattern>#ئىسمىڭىز نېم#</pattern>
+	<pattern>#ئىسمىڭىز نىم#</pattern>
 	<template>مىنىڭ ئىسمىم <bot name="name"></bot> ، سىزنىڭ ئىسمىڭىزچۇ ؟</template>
 </category>
 <category>
-	<pattern># مەن كىم #</pattern>
-	<pattern># مەن كېم #</pattern>
+	<pattern>#مەن كىم#</pattern>
+	<pattern>#مەن كېم#</pattern>
 	<pattern>#مېنىڭ ئىسمىم نېمە#</pattern>
 	<pattern>#مىنىڭ ئىسمىم نىمە#</pattern>
 	<pattern>#مىنىڭ ئىسمىم نېمە#</pattern>
@@ -91,7 +91,7 @@
 	<template>سىزنىڭ ئىسمىڭىز <get name="userName"/> ، ئالدىنقى قېتىم ئىسىمدە تۇتىۋالغان ... </template>
 </category>
 <category>
-	<pattern># ئىسمىم # ئەمەس</pattern>
+	<pattern>#ئىسمىم # ئەمەس</pattern>
 	<template>چاقچاق قىلماڭە ، ئەمسە ئىسمىڭىز نېمە </template>
 </category>
 <category>
@@ -116,7 +116,7 @@
 	<pattern>#سىز # قانچە ياش#</pattern>
 	<pattern># قانچە ياش#</pattern>
 	<pattern># نەچچە ياش#</pattern>
-	<template>مەن بۇ يل <bot name="name"></bot> ياش ، سىزچۇ ؟</template>
+	<template>مەن بۇ يل <bot name="age"></bot> ياش ، سىزچۇ ؟</template>
 </category>
 <category>
 	<pattern>#مەن#ياش#</pattern>
@@ -197,17 +197,67 @@
 
 
 
-<!-- bye -->
+<!-- bye hox -->
 
 <category>
     <pattern>#خوش#</pattern>
-    <pattern>خەير خوش#</pattern>
-    <pattern>كەتتىم#</pattern>
-    <pattern>خوش ئەمسە#</pattern>
+    <pattern>#مەن#كەتتىم#</pattern>
+    <pattern>#خەير خوش#</pattern>
+    <pattern>#كەتتىم#</pattern>
+    <pattern>#خوش ئەمسە#</pattern>
     <template>
         خەيىر - خوش ، قايتىپ كىلىشىڭىزنى قارشى ئالىمەن 
     </template>
 </category>
+
+
+<!-- mahtax praise -->
+<category>
+    <pattern>#ئاقىل#</pattern>
+    <pattern>#ئەقىللىق#</pattern>
+    <pattern>#ھۇشيار#</pattern>
+    <pattern>ھېچەن#</pattern>
+    <pattern>#چىۋەر#</pattern>
+    <pattern>#چېۋەر#</pattern>
+    <pattern>#بىلىملىك#</pattern>
+    <pattern>#بىلەرمەن#</pattern>
+    <pattern>#كالل#ئىشلەي#</pattern>
+    <template>
+        رەھمەت ، مەن تېخىمۇ تىرىشىمەن
+    </template>
+</category>
+
+
+
+
+<!-- tillax scold -->
+<category>
+    <pattern>#دۆت#</pattern>
+    <pattern>#كالۋا#</pattern>
+    <pattern>#ئەقىلسىز#</pattern>
+    <pattern>#ساراڭ#</pattern>
+    <pattern>#كالل#ئىشلىمەي#</pattern>
+    <pattern>#ئەخمەق#</pattern>
+    <template>
+        كەچۈرۈڭ ، مەن تېخىمۇ ئەقىللىق بۇلۇشقا تىرىشىمەن 
+    </template>
+</category>
+
+
+
+<!-- ihtidar skil -->
+<category>
+    <pattern>#نېمە#ئىقتىدار#</pattern>
+    <pattern>#نېمە#قىلالاي#</pattern>
+    <pattern>#قانداق#ئىقتىدار#</pattern>
+    <pattern>#قانداق#قىلالاي#</pattern>
+    <pattern>#نېمە#ئىش#</pattern>
+    <template>
+        مەن سىزنىڭ شەخسىي ياردەمچىڭىز ، سىز ئېكراندا كۆرسىتىلگەندەك سۆزلىسىڭىز بۇلىدۇ ، كىيىنچە تېخىمۇ كۆپ ئىشلارنى قىلىشقا تىرىشىمەن 
+    </template>
+</category>
+
+
 
 
 <category>
