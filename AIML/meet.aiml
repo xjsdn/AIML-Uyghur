@@ -211,6 +211,43 @@
 </category>
 
 
+
+
+<!-- beautiful ugly -->
+<category>
+    <pattern>#سىز#چىرايلىق#</pattern>
+    <pattern>#سەن#چىرايلىق#</pattern>
+    <template>
+        ھەئە مەن بەك چىرايلىق
+    </template>
+</category>
+<category>
+    <pattern>#سىز#سەت#</pattern>
+    <pattern>#سەن#سەت#</pattern>
+    <pattern>#سىز#سەپ#</pattern>
+    <pattern>#سەن#سەپ#</pattern>
+    <template>
+        ياق مەن بەك چىرايلىق
+    </template>
+</category>
+<category>
+    <pattern>#مەن#چىرايلىق#</pattern>
+    <pattern>#مەن#چىرايلىق#</pattern>
+    <template>
+        ھەئە سىز بەك چىرايلىق
+    </template>
+</category>
+<category>
+    <pattern>#مەن#سەت#</pattern>
+    <pattern>#مەن#سەت#</pattern>
+    <pattern>#مەن#سەپ#</pattern>
+    <pattern>#مەن#سەپ#</pattern>
+    <template>
+        ياق سىز بەك چىرايلىق
+    </template>
+</category>
+
+
 <!-- mahtax praise -->
 <category>
     <pattern>#ئاقىل#</pattern>
